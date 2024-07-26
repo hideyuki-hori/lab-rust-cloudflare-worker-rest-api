@@ -1,0 +1,9 @@
+name = "sample"
+main = "build/worker/shim.mjs"
+compatibility_date = "2024-07-26"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+[dev]
+ip = "0.0.0.0"

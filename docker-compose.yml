@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8787:8787"
+    command: tail -f /dev/null
+    tty: true
