@@ -6,5 +6,6 @@ services:
       - .:/app
     ports:
       - "8787:8787"
+      - "8976:8976"
     command: tail -f /dev/null
     tty: true
